@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Formularz rejestracyjny Bartosza</title>
 </head>
+
 <body>
-    <p>Moja strona</p>
-    <p>Cos tam</p>
+   <h1>Formularz rejestracyjny Bartosza</h1>
+   <form action="https://formspree.io/parzychowskibartosz@gmail.com"
+      method="POST">
+    <div>
+        <label for=“name”>Imię: </label><br><input type=“text” name=“name” />
+    </div>
+    <div>
+       <label for=“surname”>Nazwisko: </label><br><input type=“text” name=“surname” />
+    </div>
+    <div>
+        <label for=“email”>E-mail: </label><br><input type=“text” name=“email” />
+    </div>
+    <div>
+        <label for=“phone_numer”>Numer telefonu: </label><br><input type=“text” name=“phone_numer” />
+    </div>
+    <div>
+       <label for=“city”>Wybierz miasto: </label><br>
+        <select name="city">
+        <option value="value1">Kraków</option>
+        <option value="value2" selected>Warszawa</option>
+        <option value="value3">Gdańsk</option>
+        </select>
+    </div>
+    <div>
+        <label for=“gender”>Wybierz płeć </label><br>
+        <input type="radio" name="gender" value="male" checked> Mężczyzna<br>
+        <input type="radio" name="gender" value="female"> Kobieta<br>
+    </div>
+    <div>
+        <input type="checkbox" name="personal_data" checked> Zgoda na przetwarzanie danych osobowych<br>
+    </div>
+    <div>
+        <label for=“note”>Notka: </label><br>       
+        <textarea name="note" maxlength=“1000”> </textarea>
+    </div>
+    <input type="submit" value="Send">
+    </form>
+
 </body>
+
 </html>
