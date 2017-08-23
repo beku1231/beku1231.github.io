@@ -11,27 +11,27 @@
    <form action="https://formspree.io/parzychowskibartosz@gmail.com"
       method="POST">
     <div>
-        <label for=“name”>Imię: </label><br><input type=“text” name=“name” />
+        <label for=“name”>Imię: </label><br><input type=“text” name=“name” id="name" />
     </div>
     <div>
-       <label for=“surname”>Nazwisko: </label><br><input type=“text” name=“surname” />
+       <label for=“surname”>Nazwisko: </label><br><input type=“text” name=“surname” id="surname" />
     </div>
     <div>
-        <label for=“email”>E-mail: </label><br><input type=“text” name=“email” />
+        <label for=“email”>E-mail: </label><br><input type=“text” name=“email” id="email" />
     </div>
     <div>
-        <label for=“phone_number”>Numer telefonu: </label><br><input type=“text” name=“phone_number” />
+        <label for=“phone_number”>Numer telefonu: </label><br><input type=“text” name=“phone_number” id=phone_number />
     </div>
     <div>
        <label for=“city”>Wybierz miasto: </label><br>
-        <select name="city">
+        <select name="city" id="city">
         <option value="krakow">Kraków</option>
         <option value="warszawa" selected>Warszawa</option>
         <option value="gdansk">Gdańsk</option>
         </select>
     </div>
     <div>
-        <label for=“gender”>Wybierz płeć </label><br>
+        <label>Wybierz płeć: </label><br>
         <input type="radio" name="gender" value="male" checked> Mężczyzna<br>
         <input type="radio" name="gender" value="female"> Kobieta<br>
     </div>
@@ -40,7 +40,7 @@
     </div>
     <div>
         <label for=“note”>Notka: </label><br>       
-        <textarea name="note" maxlength=“1000”> </textarea>
+        <textarea name="note" maxlength=1000> </textarea>
     </div>
     <input type="submit" value="Send">
     </form>
