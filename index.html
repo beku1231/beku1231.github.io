@@ -32,12 +32,14 @@
                         </select>
                     </div>
                     <div>
-                        <label>Wybierz płeć: </label><br>
-                        <input type="radio" name="gender" value="male" checked> Mężczyzna<br>
-                        <input type="radio" name="gender" value="female"> Kobieta<br>
+                        <label for="male">Mężczyzna</label>
+                        <input type="radio" name="gender" value="male" id="male" checked><br>
+                        <label for="female">Kobieta</label>
+                        <input type="radio" name="gender" value="female" id="female"><br>
                     </div>
                     <div>
-                        <input type="checkbox" name="personal_data" checked> Zgoda na przetwarzanie danych osobowych<br>
+                        <label for="personal_data_id">Zgoda na przetwarzanie danych osobowych</label>
+                        <input type="checkbox" name="personal_data" value="personal_data" id="personal_data_id" checked>
                     </div>
                     <div>
                         <label for="note"></label><br>
